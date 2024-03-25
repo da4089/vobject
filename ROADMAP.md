@@ -21,9 +21,7 @@ Immediate tasks, starting early 2024
   - Include all applied PRs
   - Include all easy bug fixes
 - [ ] Publish 0.9.x release to PyPI
-  - Ideally, under existing `vobject` name
-  - If that's not easy, try the new PyPI abandoned projects process
-  - If that doesn't work, choose a new name as a last resort
+- [ ] Reformat code (with black?)
 - [ ] Make maintenance branch for 0.9.x
 - [ ] Renumber _master_ for 1.0.x
   - And rename to `main` while we're here? 
@@ -51,6 +49,8 @@ has been completed.
   - In particular, clean up `bytes` vs `str` everywhere
   - Remove `six`
   - Remove various `import` compatibility hacks
-- [ ] Robust 4.0 support
+- [ ] Robust vCard 4.0 support
 - [ ] Parsing performance
-- [ ] Unit-test coverage
+- [ ] Unit-test coverage (using ... coverage? Coveralls?)
+- [ ] Code analysis (pylint? flake8?)
+- [ ] Type annotations (and pyright?)
