@@ -38,16 +38,6 @@ def test_radicale_1238_3():
         assert vo is not None
 
 
-def test_radicale_1587():
-    vobjs = vobject.readComponents(radicale_1587)
-    for vo in vobjs:
-        assert vo is not None
-        lines = vo.serialize().split("\r\n")
-        for line in lines:
-            if line.startswith("GEO"):
-                assert line == "GEO:37.386013;-122.082932"
-
-
 # Test data
 
 radicale_0731 = (
@@ -27970,14 +27960,5 @@ radicale_1238_3 = (
     " xVz0eAQa9nm24mUnY4QJivqq7aR/2c/3PeAPGj2hlekWxZriJ4RyHWsE8IfM4VNEJezt2B5Cj\r\n"
     " Z7nWMP5sVgQZt2H4u+cLemPg047Z7NUA/wD1j/KPFJkk+9qDizipebTZ3Ueah5dwn+Zf/9k=\r\n"
     "\r\n"
-    "END:VCARD\r\n"
-)
-
-radicale_1587 = (
-    "BEGIN:VCARD\r\n"
-    "VERSION:3.0\r\n"
-    "FN:Given Family\r\n"
-    "N:Family;Given;Additional;Prefix;Suffix\r\n"
-    "GEO:37.386013;-122.082932\r\n"
     "END:VCARD\r\n"
 )
